@@ -1,0 +1,97 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, html, body, #app{
+    margin: 0;
+    padding: 0;
+}
+:root * {
+    max-height: 100vh;
+    max-height: -webkit-fill-available;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overscroll-behavior: none;
+    touch-action: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+#app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    inset: 0;
+}
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select, label {
+    font: inherit;
+    font-size: 1rem;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+// components
+input {
+    border: none;
+    background-color: #ffffff;
+    font-size: 1rem;
+    padding: 8px 12px;
+
+    &:focus {
+        outline: none;
+    }
+}
+button {
+    cursor: pointer;
+
+    &.btn {
+        border-radius: 8px;
+        background: $btn-bg;
+        border: none;
+        font-size: 1rem;
+        padding: 6px 12px;
+
+
+        &:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+    }
+
+    &.btn-round-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        // border: 2px solid $accent-col;
+        border: none; 
+
+        .icon {
+            width: 1.8rem;
+            height: 1.8rem;
+            background-color: transparent;
+            color: $accent-col;
+        }
+    }
+}
