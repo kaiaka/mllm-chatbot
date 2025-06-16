@@ -1,6 +1,6 @@
 # Mobile Empathic LLM with Visual Nonverbal Input
 This repository provides a study application to explore nonverbal visual context processing in MLLM-driven chatbots. 
-The app is based on Vue 3 + TypeScript + Vite, and was created as part of a MobileHCI publication ([https://doi.org/10.1145/3743724](https://doi.org/10.1145/3743724)).
+The app is based on Vue 3 + TypeScript + Vite, and was created as part of a MobileHCI publication: [https://doi.org/10.1145/3743724](https://doi.org/10.1145/3743724)
 
 
 
